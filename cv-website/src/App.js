@@ -1,34 +1,25 @@
 import './App.css';
 import {
-  createBrowserRouter,
-  RouterProvider,
+  BrowserRouter,
+  Routes,
+  Route
 } from "react-router-dom";
 import Home from "./Pages/Home"
 import PageNotFound404 from "./Pages/PageNotFound404"
+import Navbar from "./Components/Navbar"
 
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    children: [
-      {
-        path: "Home",
-        element: <Home />
-      }
-    ],
-  },
-  {
-    path: "*",
-    element: <PageNotFound404 />
-  }
-]);
 
 function App() {
   return (
-    <div className="App">
-      <RouterProvider router={router} />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<PageNotFound404 />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

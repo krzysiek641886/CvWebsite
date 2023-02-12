@@ -1,6 +1,6 @@
 function PageNotFound404() {
 	return (
-	  <div className="ErrorPage">
+	  <div>
 		<div>Page not found 404</div>
 	  </div>
 	);
