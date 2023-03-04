@@ -1,13 +1,13 @@
 import JobPrinter from "../Components/JobPrinter";
 import { useState, useEffect } from "react";
-import workExperience from "../Assets/Text/WorkExperience.json" 
+import positionsList from "../Assets/Text/voluntary_service_list.json" 
 
-function Home() {
+function VoluntaryWork() {
   return (
     <div className="Homepage">
-      <div>Home page</div>
+      <div>Voluntary Service</div>
       <div>
-        {workExperience.jobs.map((item, index) => (
+        {positionsList.jobs.map((item, index) => (
           <div key={index}>
             {JobPrinter(item)}
           </div>
@@ -17,4 +17,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default VoluntaryWork;

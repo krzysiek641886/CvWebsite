@@ -4,8 +4,10 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Home from "./Pages/Home"
+import WorkExperience from "./Pages/WorkExperience"
+import VoluntaryWork from './Pages/VoluntaryWork';
 import PageNotFound404 from "./Pages/PageNotFound404"
+import Contact from './Pages/Contact';
 import Navbar from "./Components/Navbar"
 
 
@@ -15,8 +17,11 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<WorkExperience />} />
+          <Route path="/Home" element={<WorkExperience />} />
+          <Route path="/WorkExperience" element={<WorkExperience />} />
+          <Route path="/VoluntaryWork" element={<VoluntaryWork />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound404 />} />
         </Routes>
       </div>

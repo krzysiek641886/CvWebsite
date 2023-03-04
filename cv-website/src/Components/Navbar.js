@@ -6,17 +6,17 @@ function Navbar() {
 		<nav className="navbar">
 			<ul className="navbar-nav">
 				<li className="nav-item">
-					<Link to="/" className="nav-link">
-						Home
+					<Link to="/WorkExperience" className="nav-link">
+						WorkExperience
 					</Link>
 				</li>
 				<li className="nav-item">
-					<Link to="/about" className="nav-link">
-						About
+					<Link to="/VoluntaryWork" className="nav-link">
+						VoluntaryWork
 					</Link>
 				</li>
 				<li className="nav-item">
-					<Link to="/contact" className="nav-link">
+					<Link to="/Contact" className="nav-link">
 						Contact
 					</Link>
 				</li>
