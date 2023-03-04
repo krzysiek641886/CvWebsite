@@ -1,6 +1,6 @@
 import PositionPrinter from "../Components/PositionPrinter";
-import jobsList from "../Assets/Text/jobs_list.json";
-import voluntaryServiceList from "../Assets/Text/voluntary_service_list.json";
+import jobsList from "../Assets/Text/Input/jobs_list.json";
+import voluntaryServiceList from "../Assets/Text/Input/voluntary_service_list.json";
 
 function WorkExperience() {
   return (

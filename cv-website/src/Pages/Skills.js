@@ -1,5 +1,5 @@
 import SkillPrinter from "../Components/SkillPrinter";
-import skillList from "../Assets/Text/skills_list.json" 
+import skillList from "../Assets/Text/Input/skills_list.json" 
 
 function Education() {
   return (
