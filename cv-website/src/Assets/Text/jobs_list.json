@@ -1,0 +1,32 @@
+{
+	"jobs": [
+		{
+			"institution_name": "Trackman, Vedbæk, Denmark",
+			"job_title": "Embedded Software Engineer",
+			"time_period": "02/2022 - now",
+			"link": "https://www.trackman.com/",
+			"description": "Position at an R&D department of a manufacturer of advanced tracking radar systems for sports. My job mostly consists of writing drivers and applications in C++ for Yocto embedded Linux distribution for handling cameras and processing the date that they provide. Another responsibility is developing API to a server based on Python Tornado framework. In the team, we are using continuous integration tools with Microsoft Azure and Robot Framework as a base, so my tasks also involve developing automated tests for the system."
+		},
+		{
+			"institution_name": "Toitware, Kongens Lyngby",
+			"job_title": "Student Programmer",
+			"time_period": "11/2019 - 07/2021",
+			"link": "https://toit.io/",
+			"description": "Position at a start-up company developing IoT platform for programming and orchestrating microcontroller-based devices. Job included using ESP32 microcontrollers, testing and utilising newly developed language - Toit, and web development using React, JavaScript and Type Script."
+		},
+		{
+			"institution_name": "Nokia Solutions, Krakow",
+			"job_title": "FPGA Design Engineer in 5G products ",
+			"time_period": "05/2019 - 08/2019",
+			"link": "https://en.nokiakrakow.pl/",
+			"description": "Position of a tester of System Verilog code written for FPGA components of 5G network."
+		},
+		{
+			"institution_name": "Valeo, Krakow",
+			"job_title": "Internship at R&D Department",
+			"time_period": "08/2018 - 09/2018",
+			"link": "https://www.valeo.com/en/poland/",
+			"description": "Mechanical engineering internship within the R&D department of an auto cooling systems producer - Valeo."
+		}
+	]
+}

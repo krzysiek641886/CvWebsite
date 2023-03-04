@@ -1,0 +1,25 @@
+{
+	"education": [
+		{
+			"institution_name": "DTU, Denmark",
+			"position_title": "MSc. Electrical Engineering spec. Automation and Robot Technology",
+			"time_period": "09/2019 - 01/2022",
+			"link": "https://www.linkedin.com/school/technical-university-of-denmark/",
+			"description": "Master Thesis:\\ 'Design and implementation of a low-power energy storage wake-up circuit for a one-dimensional energy harvester based on magnetic induction' - included programming ESP32 microcontrollers and Bluetooth Low Power (BLE) modules for communication.\\\\ Courses Taken::\\ Real-Time Systems, Linear Control Design, Advanced autonomous robots, \\Digital control, Deep learning in computer vision, \\Image analysis with microcomputer"
+		},
+		{
+			"institution_name": "KU Leuven, Belgium",
+			"position_title": "Erasmus+ Exchange",
+			"time_period": "10/2021 - 01/2022",
+			"link": "https://www.linkedin.com/school/ku_leuven/",
+			"description": "Courses Taken: \\Comparative Programming Languages, Java, R, e-Security, Computer-Aided IC Design"
+		},
+		{
+			"institution_name": "AGH UST, Poland",
+			"position_title": "B.E. Automatic Control and Robotics",
+			"time_period": "10/2015 - 01/2019",
+			"link": "https://www.linkedin.com/school/agh-university-of-science-and-technology/",
+			"description": "Bachelor Thesis:\\ 'Implementation of algorithm for automatically generating parameters for type-2 fuzzy logic controllers in MATLAB toolbox'\\\\ Courses Taken:\\ Control Engineering, C++, Microprocessor Technology, Real-Time Systems, Fundamentals of Machine Design, \\Engineering Drawing, Computer Networks and Databases"
+		}
+	]
+}
