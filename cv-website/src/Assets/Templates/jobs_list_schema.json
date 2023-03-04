@@ -1,0 +1,18 @@
+{
+	"jobs": [
+		{
+			"institution_name": "Foo & Co",
+			"position_title": "React Developer",
+			"time_period": "01/1919 - 01/1922",
+			"link": "https://www.foocompany.com",
+			"description": "FooBar"
+		},
+		{
+			"institution_name": "Bar & Co",
+			"position_title": "React Developer",
+			"time_period": "01/1913 - 01/1921",
+			"link": "https://www.barcompany.com",
+			"description": "FooBar"
+		}
+	]
+}
