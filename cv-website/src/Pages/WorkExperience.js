@@ -1,6 +1,6 @@
-import JobPrinter from "../Components/JobPrinter";
-import { useState, useEffect } from "react";
-import jobsList from "../Assets/Text/jobs_list.json" 
+import PositionPrinter from "../Components/PositionPrinter";
+import jobsList from "../Assets/Text/jobs_list.json";
+import voluntaryServiceList from "../Assets/Text/voluntary_service_list.json";
 
 function WorkExperience() {
   return (
@@ -9,7 +9,15 @@ function WorkExperience() {
       <div>
         {jobsList.jobs.map((item, index) => (
           <div key={index}>
-            {JobPrinter(item)}
+            {PositionPrinter(item)}
+          </div>
+        ))}
+		</div>
+    <div><h1>Voluntary Service</h1></div>
+      <div>
+        {voluntaryServiceList.jobs.map((item, index) => (
+          <div key={index}>
+            {PositionPrinter(item)}
           </div>
         ))}
 		</div>
