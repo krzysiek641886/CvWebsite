@@ -1,4 +1,4 @@
-import contactInformation from "../Assets/Text/jobs_list.json" 
+import contactInformation from "../Assets/Text/Input/jobs_list.json" 
 
 function Contact() {
   console.log(contactInformation);

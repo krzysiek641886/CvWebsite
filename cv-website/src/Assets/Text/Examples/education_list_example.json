@@ -1,0 +1,18 @@
+{
+	"education": [
+		{
+			"institution_name": "Foo University",
+			"position_title": "MSc. React Engineering",
+			"time_period": "01/1919 - 01/1922",
+			"link": "https://www.foouniveristy.com",
+			"description": "FooBar"
+		},
+		{
+			"institution_name": "Bar University",
+			"position_title": "MSc. React Engineering",
+			"time_period": "01/1913 - 01/1921",
+			"link": "https://www.baruniveristy.com",
+			"description": "FooBar"
+		}
+	]
+}

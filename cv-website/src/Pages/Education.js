@@ -1,5 +1,5 @@
 import PositionPrinter from "../Components/PositionPrinter";
-import educationList from "../Assets/Text/education_list.json" 
+import educationList from "../Assets/Text/Input/education_list.json" 
 
 function Education() {
   return (
