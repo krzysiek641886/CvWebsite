@@ -1,7 +1,7 @@
 {
 	"type": "object",
 	"properties": {
-		"education": {
+		"jobs": {
 			"type": "array",
 			"items": {
 				"type": "object",
@@ -16,8 +16,7 @@
 						"type": "string"
 					},
 					"link": {
-						"type": "string",
-						"format": "uri"
+						"type": "string"
 					},
 					"description": {
 						"type": "string"
@@ -26,14 +25,12 @@
 				"required": [
 					"institution_name",
 					"position_title",
-					"time_period",
-					"link",
-					"description"
+					"time_period"
 				]
 			}
 		}
 	},
 	"required": [
-		"education"
+		"jobs"
 	]
 }

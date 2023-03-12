@@ -4,15 +4,20 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import WorkExperience from "./Pages/WorkExperience"
+import { useEffect } from 'react';
+import WorkExperience from "./Pages/WorkExperience";
 import Education from './Pages/Education';
 import Skills from './Pages/Skills';
 import Contact from './Pages/Contact';
-import PageNotFound404 from "./Pages/PageNotFound404"
-import Navbar from "./Components/Navbar"
-
+import PageNotFound404 from "./Pages/PageNotFound404";
+import Navbar from "./Components/Navbar";
+import SchemaValidator from './Components/SchemaValidator';
 
 function App() {
+  useEffect(() => {
+    SchemaValidator();
+  }, []);
+
   return (
     <BrowserRouter>
       <div className="App">
