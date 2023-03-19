@@ -2,15 +2,20 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-content {
+  display: grid;
+  grid-template-columns: 20% 1fr;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (max-width: 767px) {
+	.page-content {
+		display: block;
+		/* hide the sidebar */
+	}
+}
+
+.main-content {
+  padding: 20px;
 }
 
 .App-header {

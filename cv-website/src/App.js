@@ -11,6 +11,7 @@ import Skills from './Pages/Skills';
 import Contact from './Pages/Contact';
 import PageNotFound404 from "./Pages/PageNotFound404";
 import Navbar from "./Components/Navbar";
+import Sidebar from "./Components/Sidebar";
 import SchemaValidator from './Components/SchemaValidator';
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
+        <div className="page-content">
+        <Sidebar/>
+        <div className="main-content">
         <Routes>
           <Route path="/" element={<WorkExperience />} />
           <Route path="/Home" element={<WorkExperience />} />
@@ -31,6 +35,8 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound404 />} />
         </Routes>
+        </div>
+        </div>
       </div>
     </BrowserRouter>
   );
