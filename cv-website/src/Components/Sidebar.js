@@ -1,5 +1,6 @@
 import "./Sidebar.css"
 import portrait from '../Assets/Images/portrait.jpg'; // Import your image here
+import contactInformation from "../Assets/Text/Input/contact_data.json";
 
 function Sidebar() {
 	return (
@@ -9,8 +10,7 @@ function Sidebar() {
 				<img src={portrait} alt="My Image" />
 			</div>
 			<div className="sidebar-text">
-				<p>Interesting facts about this sexy guy!</p>
-				<p>Even more interesting facts about this sexy guy!</p>
+				{JSON.stringify(contactInformation)}
 			</div>
 
 		</nav>

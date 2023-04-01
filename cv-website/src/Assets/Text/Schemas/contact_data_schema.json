@@ -1,3 +1,29 @@
 {
-	"To": "Be added"
-}
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+	  "name": {
+		"type": "string"
+	  },
+	  "about_me": {
+		"type": "string"
+	  },
+	  "links": {
+		"type": "array",
+		"items": {
+		  "type": "object",
+		  "properties": {
+			"title": {
+			  "type": "string"
+			},
+			"url": {
+			  "type": "string",
+			  "format": "uri"
+			}
+		  },
+		  "required": ["title", "url"]
+		}
+	  }
+	},
+	"required": ["name", "about_me", "links"]
+  }

@@ -8,7 +8,6 @@ import { useEffect } from 'react';
 import WorkExperience from "./Pages/WorkExperience";
 import Education from './Pages/Education';
 import Skills from './Pages/Skills';
-import Contact from './Pages/Contact';
 import PageNotFound404 from "./Pages/PageNotFound404";
 import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
@@ -32,7 +31,6 @@ function App() {
           <Route path="/WorkExperience" element={<WorkExperience />} />
           <Route path="/Education" element={<Education />} />
           <Route path="/Skills" element={<Skills />} />
-          <Route path="/Contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound404 />} />
         </Routes>
         </div>
