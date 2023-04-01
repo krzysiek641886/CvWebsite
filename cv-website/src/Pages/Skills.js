@@ -4,11 +4,18 @@ import skillList from "../Assets/Text/Input/skills_list.json"
 function Skills() {
   return (
     <div className="Homepage">
-      <div>Skills</div>
+      <div><h1>Skills</h1></div>
       <div>
-          <div key="skills">
-            {SkillPrinter(skillList)}
+        {skillList.skills.map((category) => (
+          <div key={category.category_name}>
+            <h2>{category.category_name}</h2>
+            {category.items.map((skill, skill_index) => (
+              <div key={skill_index}>
+                {SkillPrinter(skill)}
+              </div>
+            ))}
           </div>
+        ))}
 		</div>
     </div>
   );
