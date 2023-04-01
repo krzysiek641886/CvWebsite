@@ -1,14 +1,19 @@
 import SkillPrinter from "../Components/SkillPrinter";
 import skillList from "../Assets/Text/Input/skills_list.json" 
 
-function Education() {
+function Skills() {
   return (
     <div className="Homepage">
-      <div>Skills</div>
+      <div><h1>Skills</h1></div>
       <div>
-        {skillList.skills.map((item, index) => (
-          <div key={index}>
-            {SkillPrinter(item)}
+        {skillList.skills.map((category) => (
+          <div key={category.category_name}>
+            <h2>{category.category_name}</h2>
+            {category.items.map((skill, skill_index) => (
+              <div key={skill_index}>
+                {SkillPrinter(skill)}
+              </div>
+            ))}
           </div>
         ))}
 		</div>
@@ -16,4 +21,4 @@ function Education() {
   );
 }
 
-export default Education;
+export default Skills;
