@@ -1,20 +1,34 @@
-import "./Sidebar.css"
-import portrait from '../Assets/Images/portrait.jpg'; // Import your image here
+import "./Sidebar.css";
+import portrait from "../Assets/Images/portrait.jpg"; // Import your image here
 import contactInformation from "../Assets/Text/Input/contact_data.json";
 
-function Sidebar() {
-	return (
-		<nav className="sidebar">
-			<h1>Look at this sexy guy!</h1>
-			<div className="portrait-component">
-				<img src={portrait} alt="My Image" />
-			</div>
-			<div className="sidebar-text">
-				{JSON.stringify(contactInformation)}
-			</div>
+function printLinks(params) {
+  if (!params) return;
 
-		</nav>
-	);
+  return (
+    <div>
+      {params.map((project, index) => (
+        <div key={index}>
+          <a href={project.url}>{project.title}</a>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Sidebar() {
+  return (
+    <nav className="sidebar">
+      <div className="portrait-component">
+        <img src={portrait} alt="portrait" />
+      </div>
+      <div className="sidebar-text">
+        <h2>{contactInformation.name}</h2>
+        <p>{contactInformation.about_me}</p>
+        {printLinks(contactInformation.links)}
+      </div>
+    </nav>
+  );
 }
 
 export default Sidebar;
