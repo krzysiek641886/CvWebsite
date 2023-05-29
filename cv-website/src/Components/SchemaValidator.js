@@ -4,8 +4,8 @@ import jobs_list from '../Assets/Text/Input/jobs_list.json'
 import voluntary_service_list from '../Assets/Text/Input/voluntary_service_list.json'
 import education_list_schema from '../Assets/Text/Schemas/education_list_schema.json'
 import prof_voluntary_jobs_schema from '../Assets/Text/Schemas/prof_voluntary_jobs_schema.json'
-// import contact_data from '../Assets/Text/Input/contact_data.json'
-// import contact_data_schema from '../Assets/Text/Schemas/contact_data_schema.json'
+import contact_data from '../Assets/Text/Input/contact_data.json'
+import contact_data_schema from '../Assets/Text/Schemas/contact_data_schema.json'
 import skills_list from '../Assets/Text/Input/skills_list.json'
 import skills_list_schema from '../Assets/Text/Schemas/skills_list_schema.json'
 
@@ -33,12 +33,11 @@ function SchemaValidator() {
 		throw new Error('Failed to validate skills_list');
 	}
 	console.log("Schema validation succeeded");
-	// const validate_contact_data_schema = ajv.compile(contact_data_schema);
-	// if(!validate_contact_data_schema(contact_data)) {
-	// 	console.log("Failed to validate contact_data");
-	// 	// return false;
-	// }
-	// }
+	const validate_contact_data_schema = ajv.compile(contact_data_schema);
+	if(!validate_contact_data_schema(contact_data)) {
+		console.log("Failed to validate contact_data");
+		throw new Error('Failed to validate contact_data');
+	}
 	return true;
 }
 

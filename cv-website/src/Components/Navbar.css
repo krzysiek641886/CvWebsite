@@ -3,26 +3,26 @@
 	justify-content: space-between;
 	background-color: #333;
 	color: #fff;
-  }
-  
-  .navbar-nav {
+}
+
+.navbar-nav {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-  }
-  
-  .nav-item {
+}
+
+.nav-item {
 	margin: 0 10px;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
 	color: #fff;
 	text-decoration: none;
 	padding: 10px;
-  }
-  
-  .nav-link:hover {
+}
+
+.nav-link:hover {
 	background-color: #555;
-  }
+}

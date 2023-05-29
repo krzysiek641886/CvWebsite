@@ -20,11 +20,6 @@ function Navbar() {
 						Skills
 					</Link>
 				</li>
-				<li className="nav-item">
-					<Link to="/Contact" className="nav-link">
-						Contact
-					</Link>
-				</li>
 			</ul>
 		</nav>
 	);
