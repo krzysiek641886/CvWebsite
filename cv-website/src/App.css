@@ -11,6 +11,13 @@
   padding: 20px;
 }
 
+@media (max-width: 1000px) {
+  .page-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+}
+
 @media (max-width: 767px) {
   .page-content {
     display: block;

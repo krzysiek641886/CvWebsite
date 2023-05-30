@@ -21,7 +21,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Navbar />
+                <Navbar isMobile={isMobile} />
                 <div className="page-content">
                     <Sidebar />
                     <div className="main-content">
