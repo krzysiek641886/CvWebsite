@@ -6,8 +6,7 @@
 	background-color: #333;
 	color: white;
 	display: flex;
-	justify-content: space-between;
-	align-items: stretch;
+	
 	padding: 0.25rem 0.25rem;
 }
 
@@ -36,6 +35,7 @@
 	display: flex;
 	align-items: center;
 	padding: 0.25rem;
+	font-size: 1rem;
 }
 
 .nav li.active {
@@ -46,15 +46,25 @@
 	background-color: #777;
 }
 
+.toggle-button {
+	background-color: #777;
+	color: white;
+	padding: .5rem;
+	border: none;
+	text-align: center;
+	font-size: 1rem;
+	border-radius: 10%;
+}
+
 /* Media Query for small devices */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.horizontal-menu {
 		display: none;
 	}
 
 	.show-menu {
 		display: flex;
-		position: absolute;
+		left: 0%;
 		background-color: #333;
 		flex-direction: column;
 		align-items: center;

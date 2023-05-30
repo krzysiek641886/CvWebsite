@@ -11,7 +11,9 @@ function Navbar() {
 
     return (
         <nav className="nav">
-            <button className="menu-toggle" onClick={toggleMenu}>=</button>
+            <div className="menu-toggle">
+                <button className="toggle-button" onClick={toggleMenu}>=</button>
+            </div>
             <ul className={`horizontal-menu ${showMenu ? "show-menu" : ""}`}>
                 <CustomLink to="/WorkExperience">WorkExperience</CustomLink>
                 <CustomLink to="/Education">Education</CustomLink>
