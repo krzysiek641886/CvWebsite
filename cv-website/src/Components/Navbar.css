@@ -16,19 +16,17 @@
 	cursor: pointer;
 }
 
-.toggle-bar {
-	width: 20px;
-	height: 2px;
-	background-color: white;
-	margin-bottom: 4px;
+.dropdown-menu {
+	display: none;
 }
 
-.menu {
+.horizontal-menu {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 	display: flex;
 	gap: 1rem;
+	width: 100%;
 }
 
 .nav a {
@@ -50,21 +48,16 @@
 
 /* Media Query for small devices */
 @media (max-width: 768px) {
-	.menu {
+	.horizontal-menu {
 		display: none;
 	}
 
-	.show-menu .menu {
+	.show-menu {
 		display: flex;
+		position: absolute;
+		background-color: #333;
 		flex-direction: column;
 		align-items: center;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		background-color: #333;
-		padding: 1rem;
-		gap: 0.5rem;
 	}
 
 	.menu-toggle {
