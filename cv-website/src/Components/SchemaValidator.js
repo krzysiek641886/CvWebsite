@@ -10,32 +10,25 @@ import skills_list from "../Assets/Text/Input/skills_list.json";
 import skills_list_schema from "../Assets/Text/Schemas/skills_list_schema.json";
 
 function SchemaValidator() {
-    console.log("Entered SchemaValidator");
     const ajv = new Ajv();
     const validate_education_list = ajv.compile(education_list_schema);
     if (!validate_education_list(education_list)) {
-        console.log("Failed to validate education_list");
         throw new Error("Schema validation of input json files failed.");
     }
     const validate_jobs_list = ajv.compile(prof_voluntary_jobs_schema);
     if (!validate_jobs_list(jobs_list)) {
-        console.log("Failed to validate jobs_list");
         throw new Error("Failed to validate jobs_list");
     }
     const validate_voluntary_jobs = ajv.compile(prof_voluntary_jobs_schema);
     if (!validate_voluntary_jobs(voluntary_service_list)) {
-        console.log("Failed to validate voluntary_service_list");
         throw new Error("Failed to validate voluntary_service_list");
     }
     const validate_skills_list_schema = ajv.compile(skills_list_schema);
     if (!validate_skills_list_schema(skills_list)) {
-        console.log("Failed to validate skills_list");
         throw new Error("Failed to validate skills_list");
     }
-    console.log("Schema validation succeeded");
     const validate_contact_data_schema = ajv.compile(contact_data_schema);
     if (!validate_contact_data_schema(contact_data)) {
-        console.log("Failed to validate contact_data");
         throw new Error("Failed to validate contact_data");
     }
     return true;

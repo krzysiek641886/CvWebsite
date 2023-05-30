@@ -1,27 +1,36 @@
+import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 function Navbar() {
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
+
     return (
-        <nav className="navbar">
-            <ul className="navbar-nav">
-                <li className="nav-item">
-                    <Link to="/WorkExperience" className="nav-link">
-                        WorkExperience
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/Education" className="nav-link">
-                        Education
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/Skills" className="nav-link">
-                        Skills
-                    </Link>
-                </li>
+        <nav className="nav">
+            <div className="menu-toggle">
+                <button className="toggle-button" onClick={toggleMenu}>=</button>
+            </div>
+            <ul className={`horizontal-menu ${showMenu ? "show-menu" : ""}`}>
+                <CustomLink to="/WorkExperience">WorkExperience</CustomLink>
+                <CustomLink to="/Education">Education</CustomLink>
+                <CustomLink to="/Skills">Skills</CustomLink>
             </ul>
         </nav>
+    );
+}
+
+function CustomLink({ to, children }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+    return (
+        <li className={isActive ? "active" : "inactive"}>
+            <Link to={to}>{children}</Link>
+        </li>
     );
 }
 
