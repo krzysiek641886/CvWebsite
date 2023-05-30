@@ -1,9 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
+import { useMediaQuery } from '@mui/material';
 import WorkExperience from "./Pages/WorkExperience";
 import Education from "./Pages/Education";
 import Skills from "./Pages/Skills";
+import ProfilePage from "./Pages/ProfilePage";
 import PageNotFound404 from "./Pages/PageNotFound404";
 import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
@@ -14,16 +16,18 @@ function App() {
         SchemaValidator();
     }, []);
 
+    const isMobile = useMediaQuery('(max-width: 767px)');
+
     return (
         <BrowserRouter>
             <div className="App">
-                <Navbar />
+                <Navbar isMobile={isMobile} />
                 <div className="page-content">
                     <Sidebar />
                     <div className="main-content">
                         <Routes>
-                            <Route path="/" element={<WorkExperience />} />
-                            <Route path="/Home" element={<WorkExperience />} />
+                            <Route path="/" element={isMobile ? <ProfilePage /> : <WorkExperience />} />
+                            <Route path="/Home" element={isMobile ? <ProfilePage /> : <WorkExperience />} />
                             <Route
                                 path="/WorkExperience"
                                 element={<WorkExperience />}
