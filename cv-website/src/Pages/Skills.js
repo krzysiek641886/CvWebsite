@@ -3,7 +3,7 @@ import skillList from "../Assets/Text/Input/skills_list.json";
 
 function Skills() {
     return (
-        <div className="Homepage">
+        <div>
             <div>
                 <h1 className="section-title">Skills</h1>
             </div>
