@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { useMediaQuery } from '@mui/material';
 import WorkExperience from "./Pages/WorkExperience";
+import VoluntaryService from "./Pages/VoluntaryService";
 import Education from "./Pages/Education";
 import Skills from "./Pages/Skills";
 import ProfilePage from "./Pages/ProfilePage";
@@ -32,6 +33,7 @@ function App() {
                                 path="/WorkExperience"
                                 element={<WorkExperience />}
                             />
+                            <Route path="/VoluntaryService" element={<VoluntaryService />} />
                             <Route path="/Education" element={<Education />} />
                             <Route path="/Skills" element={<Skills />} />
                             <Route path="*" element={<PageNotFound404 />} />
