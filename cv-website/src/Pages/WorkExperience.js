@@ -6,7 +6,7 @@ function WorkExperience() {
     return (
         <div className="Homepage">
             <div>
-                <h1>Work Experience</h1>
+                <h1 className="section-title">Work Experience</h1>
             </div>
             <div>
                 {jobsList.jobs.map((item, index) => (
@@ -14,7 +14,7 @@ function WorkExperience() {
                 ))}
             </div>
             <div>
-                <h1>Voluntary Service</h1>
+                <h1 className="section-title">Voluntary Service</h1>
             </div>
             <div>
                 {voluntaryServiceList.jobs.map((item, index) => (

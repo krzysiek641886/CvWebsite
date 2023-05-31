@@ -35,7 +35,7 @@ function Navbar({ isMobile }) {
             </div>
             <ul className={`horizontal-menu ${showMenu ? "show-menu" : ""}`}>
                 <RenderMenu isMobile={isMobile} showMenu={showMenu} />
-                <CustomLink to="/WorkExperience">WorkExperience</CustomLink>
+                <CustomLink to="/WorkExperience">Work Experience</CustomLink>
                 <CustomLink to="/Education">Education</CustomLink>
                 <CustomLink to="/Skills">Skills</CustomLink>
             </ul>
