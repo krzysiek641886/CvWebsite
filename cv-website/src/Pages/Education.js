@@ -4,7 +4,7 @@ import educationList from "../Assets/Text/Input/education_list.json";
 function Education() {
     return (
         <div className="Homepage">
-            <h1>Education</h1>
+            <h1 className="section-title">Education</h1>
             <div>
                 {educationList.education.map((item, index) => (
                     <div key={index}>{PositionPrinter(item)}</div>

@@ -1,11 +1,10 @@
 function PositionPrinter(params) {
     return (
         <div>
-            <h2>{params.institution_name}</h2>
-            <p>{params.position_title}</p>
-            <p>{params.time_period}</p>
-            <p>{params.link}</p>
-            <p>{params.description}</p>
+            <h2 className="position-title-text">{params.position_title}</h2>
+            <a className="hyperlink" href={params.link}>{params.institution_name}</a>
+            <p className="time-period-text">{params.time_period}</p>
+            <p className="position-description-text">{params.description}</p>
         </div>
     );
 }
