@@ -7,7 +7,9 @@ function printLinks(params) {
             <div>
                 {params.map((project, index) => (
                     <div key={index}>
-                        <a className="hyperlink" href={project.url}>{project.title}</a>
+                        <a className="hyperlink" href={project.url}>
+                            {project.title}
+                        </a>
                     </div>
                 ))}
             </div>
@@ -19,7 +21,11 @@ function PersonProfile() {
     return (
         <div className="profile">
             <div className="portrait-component">
-                <img src={portrait} alt="portrait" />
+                <img
+                    src={portrait}
+                    alt="portrait"
+                    style={{ borderRadius: "5%" }}
+                />
             </div>
             <div className="sidebar-text">
                 <h2>{contactInformation.name}</h2>
