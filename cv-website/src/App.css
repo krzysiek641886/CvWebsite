@@ -26,6 +26,11 @@
   color: #585858;
 }
 
+.profile {
+  padding: 5%;
+}
+
+
 .profile-text {
   text-align: justify;
 }
