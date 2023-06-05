@@ -5,8 +5,8 @@ function PrintReferences({ references }) {
     return (
         <div id references>
             <h4>References:</h4>
-            {references.map((ref) => (
-                <div>
+            {references.map((ref, index) => (
+                <div key={index}>
                     <a href={ref.url}>{ref.title}</a>
                 </div>
             ))}
@@ -34,7 +34,6 @@ function IndividualSkillPrinter({ skill }) {
 }
 
 function SkillsPrinter({ category }) {
-    console.log(category);
     const [activeItem, setActiveItem] = useState(null);
     return (
         <div key={category.category_name}>
@@ -42,10 +41,12 @@ function SkillsPrinter({ category }) {
             {category.items.map((skill, skill_index) => (
                 <div key={skill_index}>
                     <div
-                        className={`accordion-item ${
-                            activeItem === skill_index ? "active" : ""
-                        }`}
-                        onClick={() => setActiveItem(skill_index)}
+                        className={`accordion-item ${activeItem === skill_index ? "active" : ""}`}
+                        onClick={() => {
+                            activeItem !== skill_index
+                                ? setActiveItem(skill_index)
+                                : setActiveItem(-1);
+                        }}
                     >
                         <h3 className="accordion-title">{skill.skill_name}</h3>
                         {activeItem === skill_index && (
