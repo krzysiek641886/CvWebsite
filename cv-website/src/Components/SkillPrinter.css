@@ -1,0 +1,23 @@
+.skill-category {
+    margin-bottom: 8vh;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.accordion-title {
+    background-color: var(--primary-gray);
+    color: white;
+    padding: 1vh;
+    cursor: pointer;
+    font-weight: normal;
+    border-radius: 1vh;
+}
+
+.accordion-content {
+    background-color: var(--secondary-gray);
+    padding: 1vh;
+    border-radius: 1vh;
+}

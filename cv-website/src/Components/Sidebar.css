@@ -4,7 +4,7 @@
 	padding-bottom: 20px;
 	text-align: center;
 	height: 100vh;
-	background-color: #c7c7c7;
+	background-color: var(--secondary-gray);
 }
 
 /* Media query for screens smaller than 768px (typical mobile devices) */

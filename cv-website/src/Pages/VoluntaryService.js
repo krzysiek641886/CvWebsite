@@ -3,10 +3,8 @@ import voluntaryServiceList from "../Assets/Text/Input/voluntary_service_list.js
 
 function VoluntaryService() {
     return (
-        <div>
-            <div>
-                <h1 className="section-title">Voluntary Service</h1>
-            </div>
+        <div id="voluntary-service-page">
+            <h1 className="section-title">Voluntary Service</h1>
             <div>
                 {voluntaryServiceList.jobs.map((item, index) => (
                     <div key={index}>{PositionPrinter(item)}</div>
