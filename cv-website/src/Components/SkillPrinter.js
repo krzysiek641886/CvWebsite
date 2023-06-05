@@ -3,11 +3,11 @@ import React, { useState } from "react";
 
 function PrintReferences({ references }) {
     return (
-        <div id references>
+        <div id="references">
             <h4>References:</h4>
             {references.map((ref, index) => (
                 <div key={index}>
-                    <a href={ref.url}>{ref.title}</a>
+                    <a className="hyperlink" href={ref.url}>{ref.title}</a>
                 </div>
             ))}
         </div>

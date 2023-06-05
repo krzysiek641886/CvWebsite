@@ -16,7 +16,8 @@
 						"type": "string"
 					},
 					"link": {
-						"type": "string"
+						"type": "string",
+						"format": "uri"
 					},
 					"description": {
 						"type": "string"
