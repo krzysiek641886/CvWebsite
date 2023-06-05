@@ -1,9 +1,4 @@
 .sidebar {
-	padding: 5px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	text-align: center;
-	height: 100vh;
 	background-color: var(--secondary-gray);
 }
 

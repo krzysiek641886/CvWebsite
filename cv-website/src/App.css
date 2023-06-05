@@ -11,16 +11,14 @@
 }
 
 .main-content {
-  height: 100vh;
-  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .position-content {
   background-color: var(--secondary-gray);
   padding: 1vh;
   margin: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
   border-radius: 1vh;
 }
 
@@ -36,9 +34,8 @@
 }
 
 .profile {
-  padding: 5%;
+  padding: 8%;
 }
-
 
 .profile-text {
   text-align: justify;
@@ -61,13 +58,13 @@
 }
 
 @media (max-width: 1000px) {
+  .main-content {
+    margin: 1%;
+  }
+
   .page-content {
     display: grid;
     grid-template-columns: 200px 1fr;
-  }
-
-  .position-content {
-    margin: 1%;
   }
 }
 
