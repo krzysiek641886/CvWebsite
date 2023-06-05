@@ -1,0 +1,18 @@
+.single-skill {
+    text-align: left;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-title {
+    background-color: #eee;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    background-color: #f9f9f9;
+    padding: 10px;
+}

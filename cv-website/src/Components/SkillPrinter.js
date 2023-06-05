@@ -1,6 +1,10 @@
-function PrintReferences(references) {
+import "./SkillPrinter.css";
+import React, { useState } from "react";
+
+function PrintReferences({ references }) {
     return (
         <div id references>
+            <h4>References:</h4>
             {references.map((ref) => (
                 <div>
                     <a href={ref.url}>{ref.title}</a>
@@ -10,22 +14,50 @@ function PrintReferences(references) {
     );
 }
 
-function SkillPrinter(params) {
+function IndividualSkillPrinter({ skill }) {
     return (
-        <div>
-            <h3>{params.skill_name}</h3>
-            <p>{params.description}</p>
-            {params.projects.map((project, index) => (
+        <div className="single-skill">
+            <h2>{skill.skill_name}</h2>
+            <p>{skill.description}</p>
+            <h4>Projects:</h4>
+            {skill.projects.map((project, index) => (
                 <div key={index}>
                     <p>{project.title}</p>
                     <p>{project.description}</p>
-                    {project.references
-                        ? PrintReferences(project.references)
-                        : null}
+                    {project.references && (
+                        <PrintReferences references={project.references} />
+                    )}
                 </div>
             ))}
         </div>
     );
 }
 
-export default SkillPrinter;
+function SkillsPrinter({ category }) {
+    console.log(category);
+    const [activeItem, setActiveItem] = useState(null);
+    return (
+        <div key={category.category_name}>
+            <h2>{category.category_name}</h2>
+            {category.items.map((skill, skill_index) => (
+                <div key={skill_index}>
+                    <div
+                        className={`accordion-item ${
+                            activeItem === skill_index ? "active" : ""
+                        }`}
+                        onClick={() => setActiveItem(skill_index)}
+                    >
+                        <h3 className="accordion-title">{skill.skill_name}</h3>
+                        {activeItem === skill_index && (
+                            <div className="accordion-content">
+                                <IndividualSkillPrinter skill={skill} />
+                            </div>
+                        )}
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
+}
+
+export default SkillsPrinter;
