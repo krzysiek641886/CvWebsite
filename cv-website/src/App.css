@@ -5,14 +5,15 @@
 
 .page-content {
   text-align: center;
-  display: grid;
-  grid-template-columns: 20% 1fr;
+  display: flex;
   color: black;
 }
 
 .main-content {
-  margin-left: 10%;
+  margin-top: 5%;
+  margin-left: 30%;
   margin-right: 10%;
+  width: 80%;
 }
 
 .position-content {
@@ -59,12 +60,10 @@
 
 @media (max-width: 1000px) {
   .main-content {
-    margin: 1%;
-  }
-
-  .page-content {
-    display: grid;
-    grid-template-columns: 200px 1fr;
+    margin-top: 5%;
+    margin-left: calc(200px + 10%);
+    margin-right: 10%;
+    width: calc(100% - 200px);
   }
 }
 
@@ -72,5 +71,10 @@
   .page-content {
     display: block;
     /* hide the sidebar */
+  }
+
+  .main-content {
+    width: 100%;
+    margin: 1%;
   }
 }

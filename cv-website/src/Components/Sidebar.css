@@ -1,5 +1,20 @@
 .sidebar {
 	background-color: var(--secondary-gray);
+	position: fixed;
+	width: 20%;
+	top: 5%;
+	height: 95%;
+}
+
+/* Media query for screens smaller than 1000px */
+@media (max-width: 1000px) {
+	.sidebar {
+		background-color: var(--secondary-gray);
+		position: fixed;
+		width: 200px;
+		top: 5%;
+		height: 95%;
+	}
 }
 
 /* Media query for screens smaller than 768px (typical mobile devices) */
