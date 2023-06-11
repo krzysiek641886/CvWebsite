@@ -1,34 +1,34 @@
 {
-	"skills" : [
-		{"category_name": "Programming",
-		"items":[
-			{
-				"skill_name": "C++ programming language",
-				"description": "Gained experience on C++ projects.",
-				"projects": [
-					{
-						"title": "C++ driver",
-						"description": "Description"
-					}
-				]
-			},
-			{
-				"skill_name": "Javascript",
-				"description": "Used Javascript and React",
-				"projects": [
-					{
-						"title": "Website",
-						"description": "You are currently looking at a website",
-						"references": [
-							{
-								"title": "Link to website",
-								"url": "www.website.com"
-							}
-						]
-					}
-				]
-			}
-		]}
-	]
-	
+    "skills" : [
+        {"category_name": "Programming",
+        "items":[
+            {
+                "skill_name": "C++ programming language",
+                "description": "Gained experience on C++ projects.",
+                "projects": [
+                    {
+                        "title": "C++ driver",
+                        "description": "Description"
+                    }
+                ]
+            },
+            {
+                "skill_name": "Javascript",
+                "description": "Used Javascript and React",
+                "projects": [
+                    {
+                        "title": "Website",
+                        "description": "You are currently looking at a website",
+                        "references": [
+                            {
+                                "title": "Link to website",
+                                "url": "www.website.com"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]}
+    ]
+    
 }

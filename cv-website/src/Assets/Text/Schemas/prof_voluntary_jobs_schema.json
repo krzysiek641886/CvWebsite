@@ -1,37 +1,37 @@
 {
-	"type": "object",
-	"properties": {
-		"jobs": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"properties": {
-					"institution_name": {
-						"type": "string"
-					},
-					"position_title": {
-						"type": "string"
-					},
-					"time_period": {
-						"type": "string"
-					},
-					"link": {
-						"type": "string",
-						"format": "uri"
-					},
-					"description": {
-						"type": "string"
-					}
-				},
-				"required": [
-					"institution_name",
-					"position_title",
-					"time_period"
-				]
-			}
-		}
-	},
-	"required": [
-		"jobs"
-	]
+    "type": "object",
+    "properties": {
+        "jobs": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "institution_name": {
+                        "type": "string"
+                    },
+                    "position_title": {
+                        "type": "string"
+                    },
+                    "time_period": {
+                        "type": "string"
+                    },
+                    "link": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "description": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "institution_name",
+                    "position_title",
+                    "time_period"
+                ]
+            }
+        }
+    },
+    "required": [
+        "jobs"
+    ]
 }

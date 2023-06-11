@@ -1,80 +1,80 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"type": "object",
-	"properties": {
-		"skills": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"properties": {
-					"category_name": {
-						"type": "string"
-					},
-					"items": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"skill_name": {
-									"type": "string"
-								},
-								"description": {
-									"type": "string"
-								},
-								"projects": {
-									"type": "array",
-									"items": {
-										"type": "object",
-										"properties": {
-											"title": {
-												"type": "string"
-											},
-											"description": {
-												"type": "string"
-											},
-											"references": {
-												"type": "array",
-												"items": {
-													"type": "object",
-													"properties": {
-														"title": {
-															"type": "string"
-														},
-														"url": {
-															"type": "string",
-															"format": "uri"
-														}
-													},
-													"required": [
-														"title",
-														"url"
-													]
-												}
-											}
-										},
-										"required": [
-											"title",
-											"description"
-										]
-									}
-								}
-							},
-							"required": [
-								"skill_name",
-								"description",
-								"projects"
-							]
-						}
-					}
-				},
-				"required": [
-					"category_name",
-					"items"
-				]
-			}
-		}
-	},
-	"required": [
-		"skills"
-	]
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "skills": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "category_name": {
+                        "type": "string"
+                    },
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "skill_name": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "projects": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "title": {
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "type": "string"
+                                            },
+                                            "references": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "title": {
+                                                            "type": "string"
+                                                        },
+                                                        "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "title",
+                                                        "url"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "required": [
+                                            "title",
+                                            "description"
+                                        ]
+                                    }
+                                }
+                            },
+                            "required": [
+                                "skill_name",
+                                "description",
+                                "projects"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "category_name",
+                    "items"
+                ]
+            }
+        }
+    },
+    "required": [
+        "skills"
+    ]
 }

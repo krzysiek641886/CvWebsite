@@ -1,31 +1,31 @@
 .sidebar {
-	background-color: var(--secondary-gray);
-	position: fixed;
-	width: var(--sidebar-width);
-	top: var(--navbar-height);
-	height: 100%;
+    background-color: var(--secondary-gray);
+    position: fixed;
+    width: var(--sidebar-width);
+    top: var(--navbar-height);
+    height: 100%;
 }
 
 .portrait-component img {
-	width: 100%;
-	object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Media query for screens smaller than 1000px */
 @media (max-width: 1000px) {
-	.sidebar {
-		background-color: var(--secondary-gray);
-		position: fixed;
-		width: var(--sidebar-minimal-width);
-		top: 5%;
-		height: 95%;
-	}
+    .sidebar {
+        background-color: var(--secondary-gray);
+        position: fixed;
+        width: var(--sidebar-minimal-width);
+        top: 5%;
+        height: 95%;
+    }
 }
 
 /* Media query for screens smaller than 768px (typical mobile devices) */
 @media (max-width: 767px) {
-	.sidebar {
-		display: none;
-		/* hide the sidebar */
-	}
+    .sidebar {
+        display: none;
+        /* hide the sidebar */
+    }
 }

@@ -1,20 +1,20 @@
 {
-	"jobs": [
-		{
-			"institution_name": "National React Association",
-			"position_title": "Volunteer",
-			"time_period": "01/1919 - 01/1922",
-			"link": "https://www.nationalreactassociation.com",
-			"description": "FooBar"
-		},
-		{
-			"institution_name": "National JS Association",
-			"position_title": "Volunteer",
-			"time_period": "01/1919 - 11/1922",
-			"link": "https://www.nationaljsassociation.com",
-			"description": "FooBar"
-		}
-	]
+    "jobs": [
+        {
+            "institution_name": "National React Association",
+            "position_title": "Volunteer",
+            "time_period": "01/1919 - 01/1922",
+            "link": "https://www.nationalreactassociation.com",
+            "description": "FooBar"
+        },
+        {
+            "institution_name": "National JS Association",
+            "position_title": "Volunteer",
+            "time_period": "01/1919 - 11/1922",
+            "link": "https://www.nationaljsassociation.com",
+            "description": "FooBar"
+        }
+    ]
 }
 
 

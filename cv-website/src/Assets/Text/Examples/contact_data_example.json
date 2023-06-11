@@ -1,10 +1,10 @@
 {
-	"name": "John Doe",
-	"about_me": "Great creator of CV websites. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo lorem, lacinia quis lacus at, tincidunt dictum lorem. Curabitur vitae metus in purus pharetra rhoncus. In hac habitasse platea dictumst.",
-	"links": [
-		{"title": "Linkedin",
-		"url": "https://www.linkedin.com/in/john-doe/"},
-		{"title": "Github",
-		"url": "https://github.com/johndoe"}
-	]
+    "name": "John Doe",
+    "about_me": "Great creator of CV websites. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo lorem, lacinia quis lacus at, tincidunt dictum lorem. Curabitur vitae metus in purus pharetra rhoncus. In hac habitasse platea dictumst.",
+    "links": [
+        {"title": "Linkedin",
+        "url": "https://www.linkedin.com/in/john-doe/"},
+        {"title": "Github",
+        "url": "https://github.com/johndoe"}
+    ]
 }
