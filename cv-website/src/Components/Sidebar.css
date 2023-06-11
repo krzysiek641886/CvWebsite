@@ -1,9 +1,14 @@
 .sidebar {
 	background-color: var(--secondary-gray);
 	position: fixed;
-	width: 20%;
-	top: 5%;
-	height: 95%;
+	width: var(--sidebar-width);
+	top: var(--navbar-height);
+	height: 100%;
+}
+
+.portrait-component img {
+	width: 100%;
+	object-fit: cover;
 }
 
 /* Media query for screens smaller than 1000px */
@@ -11,7 +16,7 @@
 	.sidebar {
 		background-color: var(--secondary-gray);
 		position: fixed;
-		width: 200px;
+		width: var(--sidebar-minimal-width);
 		top: 5%;
 		height: 95%;
 	}
@@ -24,8 +29,3 @@
 		/* hide the sidebar */
 	}
 }
-
-.portrait-component img {
-	width: 100%;
-	object-fit: cover;
-  }
