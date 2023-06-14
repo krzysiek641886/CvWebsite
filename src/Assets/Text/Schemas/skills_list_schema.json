@@ -61,8 +61,7 @@
                             },
                             "required": [
                                 "skill_name",
-                                "description",
-                                "projects"
+                                "description"
                             ]
                         }
                     }
