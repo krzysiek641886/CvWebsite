@@ -21,16 +21,17 @@ function IndividualSkillPrinter({ skill, skill_index }) {
         <div key={skill_index}>
             <h4>Description:</h4>
             <p>{skill.description}</p>
-            <h4>Projects:</h4>
-            {skill.projects.map((project, index) => (
-                <div key={index}>
-                    <p>{project.title}</p>
-                    <p>{project.description}</p>
-                    {project.references && (
-                        <PrintReferences references={project.references} />
-                    )}
-                </div>
-            ))}
+            {skill.projects && <h4>Projects:</h4>}
+            {skill.projects &&
+                skill.projects.map((project, index) => (
+                    <div key={index}>
+                        <p>{project.title}</p>
+                        <p>{project.description}</p>
+                        {project.references && (
+                            <PrintReferences references={project.references} />
+                        )}
+                    </div>
+                ))}
         </div>
     );
 }
@@ -42,7 +43,9 @@ function SkillsPrinter({ category }) {
             <h2 className="category-name">{category.category_name}</h2>
             {category.items.map((skill, skill_index) => (
                 <div
-                    className={`accordion-item ${activeItem === skill_index ? "active" : ""}`}
+                    className={`accordion-item ${
+                        activeItem === skill_index ? "active" : ""
+                    }`}
                     key={skill_index}
                     onClick={() => {
                         activeItem !== skill_index
@@ -53,7 +56,10 @@ function SkillsPrinter({ category }) {
                     <h3 className="accordion-title">{skill.skill_name}</h3>
                     {activeItem === skill_index && (
                         <div className="accordion-content">
-                            <IndividualSkillPrinter skill={skill} key={skill_index}/>
+                            <IndividualSkillPrinter
+                                skill={skill}
+                                key={skill_index}
+                            />
                         </div>
                     )}
                 </div>
