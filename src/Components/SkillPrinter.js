@@ -19,17 +19,18 @@ function PrintReferences({ references }) {
 function IndividualSkillPrinter({ skill, skill_index }) {
     return (
         <div key={skill_index}>
-            <h4>Description:</h4>
+            <h2>Description:</h2>
             <p>{skill.description}</p>
-            {skill.projects && <h4>Projects:</h4>}
+            {skill.projects && <h2>Projects:</h2>}
             {skill.projects &&
                 skill.projects.map((project, index) => (
                     <div key={index}>
-                        <p>{project.title}</p>
+                        <h3><i>{project.title}</i></h3>
                         <p>{project.description}</p>
                         {project.references && (
                             <PrintReferences references={project.references} />
                         )}
+                        <hr className="projects-divider"/>
                     </div>
                 ))}
         </div>

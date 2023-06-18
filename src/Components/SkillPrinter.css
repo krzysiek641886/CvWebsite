@@ -20,3 +20,7 @@
     padding: 1vh;
     border-radius: 1vh;
 }
+
+.projects-divider {
+    border-top: 3px solid #bbb;
+}
