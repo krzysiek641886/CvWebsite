@@ -7,9 +7,9 @@ function printLinks(params) {
             <div>
                 {params.map((project, index) => (
                     <div key={index}>
-                        <a className="hyperlink" href={project.url}>
+                        <h3><a className="hyperlink" href={project.url}>
                             {project.title}
-                        </a>
+                        </a></h3>
                     </div>
                 ))}
             </div>
