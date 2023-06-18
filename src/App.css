@@ -30,10 +30,9 @@
 }
 
 .hyperlink {
-  color: inherit;
-    text-decoration: none;
+  text-decoration: none;
   font-weight: bold;
-  color: #000b42;
+  color: #1c1cc0;
 }
 
 .section-title {
