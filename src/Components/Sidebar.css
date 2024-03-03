@@ -1,5 +1,5 @@
 .sidebar {
-    background-color: var(--secondary-gray);
+    background-color: var(--content-background);
     position: fixed;
     width: var(--sidebar-width);
     top: var(--navbar-height);
@@ -14,7 +14,7 @@
 /* Media query for screens smaller than 1000px */
 @media (max-width: 1000px) {
     .sidebar {
-        background-color: var(--secondary-gray);
+        background-color: var(--content-background);
         position: fixed;
         width: var(--sidebar-minimal-width);
         top: 5%;

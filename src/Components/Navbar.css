@@ -1,6 +1,7 @@
 .nav {
-    background-color: var(--primary-gray);
-    color: white;
+    background-color: var(--secondary-gray);
+    color: var(--text-color);
+    font-weight: bold;
     display: flex;
     position: fixed;
     top: 0;
@@ -35,16 +36,17 @@
 }
 
 .nav li.active {
-    background-color: #555;
+    background-color: var(--button-highlight);
 }
 
 .nav li:hover {
-    background-color: #777;
+    background-color: var(--button-highlight-light);
 }
 
 .toggle-button {
-    background-color: #777;
-    color: white;
+    background-color: var(--primary-gray);
+    color: var(--button-highlight);
+    font-weight: bold;
     padding: .5rem;
     height: 100%;
     border: none;
@@ -56,8 +58,6 @@
 /* Media Query for small devices */
 @media (max-width: 767px) {
     .nav {
-        background-color: var(--primary-gray);
-        color: white;
         display: flex;
         position: fixed;
         width: 100%;
@@ -80,7 +80,6 @@
         width: 100%;
         display: flex;
         left: 0%;
-        background-color: #333;
         flex-direction: column;
         align-items: center;
     }

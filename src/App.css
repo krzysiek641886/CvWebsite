@@ -1,18 +1,25 @@
 :root {
-  --primary-gray: #333;
-  --secondary-gray: #cacaca;
-
   --sidebar-width: 20%;
   --sidebar-minimal-width: 200px;
 
   --navbar-height: 5%;
   --navbar-minimal-height: 38px;
+
+  --primary-gray: #525461;
+  --secondary-gray: #777A8C;
+  --hyperlinks-color: #1C418C;
+  --content-background: #8ba5d9a4;
+  --page-background: #dadce081;
+  --button-highlight: #b0dada;
+  --button-highlight-light: #b0dada79;
+  --text-color: black;
 }
 
 .page-content {
   text-align: center;
   display: flex;
-  color: black;
+  color: var(--text-color);
+  background-color: var(--page-background);
 }
 
 .main-content {
@@ -23,7 +30,7 @@
 }
 
 .position-content {
-  background-color: var(--secondary-gray);
+  background-color: var(--content-background);
   padding: 1vh;
   margin: 2%;
   border-radius: 1vh;
@@ -32,11 +39,11 @@
 .hyperlink {
   text-decoration: none;
   font-weight: bold;
-  color: #1c1cc0;
+  color: var(--hyperlinks-color);
 }
 
 .section-title {
-  color: #585858;
+  color: var(--primary-gray);
 }
 
 .profile {
